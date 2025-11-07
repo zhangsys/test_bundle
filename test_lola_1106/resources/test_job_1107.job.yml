@@ -1,0 +1,20 @@
+resources:
+  jobs:
+    new_1107:
+      name: new_1107_1
+      tasks:
+        - task_key: test_lola_1107_1
+          sql_task:
+            query:
+              query_id: 69fc59cb-0e34-4a3f-934b-f7e1800d854e
+            warehouse_id: b3ab676e26867b61
+        - task_key: test_lola_1107_2
+          depends_on:
+            - task_key: test_lola_1107_1
+          sql_task:
+            query:
+              query_id: 69fc59cb-0e34-4a3f-934b-f7e1800d854e
+            warehouse_id: b3ab676e26867b61
+      queue:
+        enabled: true
+

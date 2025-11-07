@@ -3,7 +3,7 @@
 resources:
   pipelines:
     test_lola_1106_etl:
-      name: test_lola_1106_etl
+      name: test_lola_1108_etl
       catalog: ${var.catalog}
       schema: ${var.schema}
       serverless: true
